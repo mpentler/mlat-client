@@ -102,7 +102,7 @@ location pin from the coverage maps.""",
     if args.uuid_path is not None:
         uuid_path = [ args.uuid_path ]
     else:
-        uuid_path = [ '/usr/local/share/adsbfi/adsbfi-uuid', '/boot/adsbfi-uuid' ]
+        uuid_path = [ '/usr/local/share/oarc-adsb/oarc-adsb-uuid', '/boot/oarc-adsb-uuid' ]
 
     server = JsonServerConnection(host=args.server[0], port=args.server[1], uuid_path=uuid_path,
                                   handshake_data={'lat': args.lat,
